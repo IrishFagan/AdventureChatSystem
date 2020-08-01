@@ -1,6 +1,6 @@
 # Adventure Chat System
 
-# This is a chat function that is built for an adventure game based inside a browser.
+### This is a chat function that is built for an adventure game based inside a browser.
 
 ---
 
