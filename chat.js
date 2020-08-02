@@ -7,3 +7,7 @@ sendChat.addEventListener('click', function() {
 	alert("sending chat: " + message.value)
 	socket.emit('chat', message.value)
 })
+
+socket.on('chat', function(data) {
+	console.log(data)
+})
