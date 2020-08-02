@@ -4,7 +4,6 @@ var sendChat = document.getElementById("message-send");
 var message = document.getElementById("message-box");
 
 function sendMessage() {
-	alert("sending chat: " + message.value);
 	socket.emit('chat', message.value);
 }
 
@@ -18,6 +17,8 @@ $("#chat-form").submit(function (evt) {
 })
 
 socket.on('chat', function(data) {
-	$("#chat-window").append('<p>'+data+'</p>');
+	$("#chat-window").append('<p class="message">'+data+'</p>');
+	$("#message-box").val("");
+	$("#chat-window").scrollTop($("#chat-window")[0].scrollHeight)
 	console.log(data);
 })
