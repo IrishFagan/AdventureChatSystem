@@ -14,10 +14,15 @@ io.on('connection', function(socket) {
 	console.log('Connection Established')
 
 	socket.on('chat', function(data) {
-		console.log(data)
+		console.log("MSG: " + data)
+		sendToAll(data)
 	})
 
 	socket.on('disconnect', function() {
 		console.log('Client Has Disconnected')
 	})
 })
+
+function sendToAll(data) {
+	io.emit('chat', data)
+}
