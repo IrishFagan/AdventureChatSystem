@@ -21,3 +21,10 @@ h1 {
 	margin: auto;
 	text-align: center;
 }
+
+.message {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	margin-left: 10px;
+}
