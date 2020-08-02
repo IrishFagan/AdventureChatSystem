@@ -1,0 +1,12 @@
+#chat {
+	margin: auto;
+	overflow: scroll;
+	width: 40%;
+	height: 50%;
+	background-color: lightgrey;
+}
+
+.chat {
+	margin: auto;
+	text-align: center;
+}
