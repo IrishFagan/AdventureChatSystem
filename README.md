@@ -4,7 +4,7 @@
 
 ---
 
-- [ ] Working Chat
+- [x] Working Chat
 - [ ] Names and Roles
 - [ ] Choice of Avatar
 - [ ] Choice of Name Color
