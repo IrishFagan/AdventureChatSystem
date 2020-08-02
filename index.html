@@ -1,4 +1,5 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+<link rel="stylesheet" href="./chat.css">
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -7,13 +8,18 @@
 	<title>Adventure Chat</title>
 </head>
 
-<h1>Adventure Chat System</h1>
+<h1 class="chat">Adventure Chat System</h1>
 
 <body>
-	<form>
-		<input type="text" id="message" placeholder="Message"><br>
-		<input type="button" id="send" value="send">
-	</form>
+	<div id="chat">
+
+	</div>
+	<div class="chat">
+		<form>
+			<input type="text" class="chat" id="message" placeholder="Message"><br>
+			<input type="button" class="chat" id="send" value="send">
+		</form>
+	<div>
 </body>
 
 <script type="text/javascript" src="./chat.js"></script>
