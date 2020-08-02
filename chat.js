@@ -4,7 +4,9 @@ var sendChat = document.getElementById("message-send");
 var message = document.getElementById("message-box");
 
 function sendMessage() {
-	socket.emit('chat', message.value);
+	if(message.value != "") {
+		socket.emit('chat', message.value);
+	}
 }
 
 sendChat.addEventListener('click', function () {
