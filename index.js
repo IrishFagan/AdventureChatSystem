@@ -11,9 +11,13 @@ var server = app.listen(port, function() {
 var io = socket(server)
 
 io.on('connection', function(socket) {
-	console.log("Connection Established")
+	console.log('Connection Established')
 
 	socket.on('chat', function(data) {
 		console.log(data)
+	})
+
+	socket.on('disconnect', function() {
+		console.log('Client Has Disconnected')
 	})
 })
