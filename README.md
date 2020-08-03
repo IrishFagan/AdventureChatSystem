@@ -3,7 +3,6 @@
 This is a chat function that is built for an adventure game based inside a browser.
 
 ## To-do List
----
 
 - [x] Working Chat
 - [x] Names and Roles
