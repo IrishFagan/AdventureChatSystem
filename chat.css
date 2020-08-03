@@ -10,7 +10,7 @@ h1 {
 	background-color: lightgrey;
 }
 
-#message-box, #message-send {
+#message-box, #message-send, #username-box, #role-box, #character-submit {
 	margin: auto;
 	width: 100%;
 	padding: 10px;
@@ -21,13 +21,17 @@ form {
 	margin: 0px;
 }
 
-.chat {
+.chat, .character-details {
 	width:40%;
 	margin: auto;
 	text-align: center;
 	border: 4px solid black;
 	border-radius: 5px;
 	margin-top: 2%;
+}
+
+.character-details {
+	width: 20%;
 }
 
 .message {
