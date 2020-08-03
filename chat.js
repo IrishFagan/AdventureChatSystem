@@ -3,16 +3,21 @@ var socket = io.connect('ws://localhost:8080');
 var sendChat = document.getElementById("message-send");
 var message = document.getElementById("message-box");
 
-var username = "Iro";
+var username, role = "";
 
 function sendMessage() {
 	if(message.value != "") {
-		socket.emit('chat', [username, message.value]);
+		socket.emit('chat', [username, role, message.value]);
 	}
 }
 
-sendChat.addEventListener('click', function () {
-	sendMessage();
+$("#character-form").submit(function (evt) {
+	evt.preventDefault();
+	username = $("#username-box").val();
+	role = $("#role-box").val();
+
+	$("#username-box").val("");
+	$("#role-box").val("");
 });
 
 $("#chat-form").submit(function (evt) {
