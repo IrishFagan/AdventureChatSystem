@@ -14,7 +14,7 @@ io.on('connection', function(socket) {
 	console.log('Connection Established')
 
 	socket.on('chat', function(data) {
-		console.log(data[0] + ": " + data[1])
+		console.log(data[0] + "(" + data[1] + "): " + data[2])
 		sendToAll(data)
 	})
 
@@ -24,5 +24,5 @@ io.on('connection', function(socket) {
 })
 
 function sendToAll(data) {
-	io.emit('chat', data[0] + ": " + data[1])
+	io.emit('chat', data[0] + "(" + data[1] + "): " + data[2])
 }
