@@ -6,7 +6,7 @@ var message = document.getElementById("message-box");
 var username, role = "";
 
 function sendMessage() {
-	if(message.value != "") {
+	if(message.value,username,role != "") {
 		socket.emit('chat', [username, role, message.value]);
 	}
 }
